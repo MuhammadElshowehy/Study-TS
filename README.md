@@ -1,2 +1,2 @@
 # Study-TS
-Typescript styudying
+Typescript studying
