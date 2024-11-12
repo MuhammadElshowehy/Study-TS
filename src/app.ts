@@ -53,18 +53,18 @@ type funcType = (n1: number, n2: number) => number;
 
 
 // func type & callback //
-// const numbers: number[] = [1, 4, 6, 7, 90, 40, 57];
+const numbers: number[] = [1, 4, 6, 7, 90, 40, 57];
 
-// const filtration = function(): number[] {
-//   let filtered: number[] = [];
-//   numbers.filter((num: number): void => {
-//     if (num <= 50) {
-//       filtered.push(num); 
-//     }
-//   });
-//   return filtered;
-// }
-// console.log(filtration());
+const filtration = function(): number[] {
+  let filtered: number[] = [];
+  numbers.filter((num: number): void => {
+    if (num <= 50) {
+      filtered.push(num); 
+    }
+  });
+  return filtered;
+}
+console.log(filtration());
 
 
 function sendRequest(data: string, cb: (response: any) => void) {
@@ -73,7 +73,12 @@ function sendRequest(data: string, cb: (response: any) => void) {
 }
 
 sendRequest('Send this!', (response) => { 
-  console.log(response);
+  // console.log(response);
   return true;
 });
 
+// flat array //
+const dddd = [1, 3, [3, 4]];
+console.log(dddd.flat());
+
+let ffff: any;
