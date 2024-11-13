@@ -43,6 +43,7 @@ console.log(summation(1, 3));
 // func type & callback //
 const numbers = [1, 4, 6, 7, 90, 40, 57];
 const filtration = function () {
+    // debugger
     let filtered = [];
     numbers.filter((num) => {
         if (num <= 50) {
@@ -63,5 +64,8 @@ sendRequest('Send this!', (response) => {
 // flat array //
 const dddd = [1, 3, [3, 4]];
 console.log(dddd.flat());
-let ffff;
+let ffff = 22;
+function tttt() {
+    // let vv = "d";
+}
 //# sourceMappingURL=app.js.map

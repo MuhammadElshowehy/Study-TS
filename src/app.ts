@@ -56,6 +56,7 @@ type funcType = (n1: number, n2: number) => number;
 const numbers: number[] = [1, 4, 6, 7, 90, 40, 57];
 
 const filtration = function(): number[] {
+  // debugger
   let filtered: number[] = [];
   numbers.filter((num: number): void => {
     if (num <= 50) {
@@ -81,4 +82,8 @@ sendRequest('Send this!', (response) => {
 const dddd = [1, 3, [3, 4]];
 console.log(dddd.flat());
 
-let ffff: any;
+let ffff: any = 22;
+
+function tttt() {
+  // let vv = "d";
+}
