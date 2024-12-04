@@ -15,4 +15,11 @@ class Laptop {
         this.type = type;
     }
 }
+let testObj = {
+    age: 25,
+    // name: 'muhammad'
+};
+// type Add = (a: number, b: number) => number;
+const Add = (a, b) => a + b;
+// end of interface //
 //# sourceMappingURL=interface.js.map

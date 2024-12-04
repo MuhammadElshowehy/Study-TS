@@ -30,5 +30,24 @@ class Laptop implements Factory {
 }
 
 interface Factory {
-  name: string;
+  readonly name?: string;
 }
+
+interface Rere extends Factory {
+  age: number;
+}
+
+let testObj: Rere = {
+  age: 25,
+  // name: 'muhammad'
+}
+
+// interface as func //
+interface Add {
+  (a: number, b: number): number;
+}
+// type Add = (a: number, b: number) => number;
+
+const Add: Add = (a: number, b: number) => a + b;
+
+// end of interface //
