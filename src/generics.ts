@@ -8,7 +8,7 @@ const merged = merge({ age: 25 }, { name: "mhmd" });
 console.log(merged.name);
 console.log(merged.age);
 
-function addition<T1, T2>(num1: T1, num2: T2) {
+function genericAddition<T1, T2>(num1: T1, num2: T2) {
   if (typeof num1 === "number" && typeof num2 === "number") {
     return num1 + num2;
   } else {
@@ -16,7 +16,7 @@ function addition<T1, T2>(num1: T1, num2: T2) {
   }
 }
 
-// let sum = addition<number, number>(3, 4);
-// let sum1 = addition<string, number>('3', 4);
-// let sum2 = addition<number, number>(3, 4);
+// let sum = genericAddition<number, number>(3, 4);
+// let sum1 = genericAddition<string, number>('3', 4);
+// let sum2 = genericAddition<number, number>(3, 4);
 // console.log(sum);
